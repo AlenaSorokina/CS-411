@@ -1,0 +1,409 @@
+// added by Jianjia Zhang for product page
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+
+nav ul{
+  display: inline-block;
+
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 30px;
+}
+ul li a:hover {
+  color:red;
+}
+
+a{
+  text-decoration: none;
+  color: #555;
+}
+p{
+  color: #555;
+}
+
+.container{
+  max-width:1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img{
+  max-width: 300px;
+  padding: 50px 0;
+}
+.col-2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.btn{
+  display: inline-block;
+  background: #d16500;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 20px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+.btn:hover{
+  background: #3234ad;
+}
+.header{
+  background: radial-gradient(#fff, #f3d9c1);
+}
+.header row{
+  margin-top: 70px;
+}
+
+
+
+/* .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3234ad;}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropbtn {
+  background-color: #d16500;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+} */
+
+
+.navbar .search-container {
+  float: right;
+  width: 80%;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  width: 80%;
+  border: none;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+.navbar input[type=number] {
+  padding: 6px;
+  margin: 8px;
+  margin-left: 205px;
+  font-size: 17px;
+  border: none;
+  width: 10%;
+}
+
+
+
+
+
+.small-container {
+  max-width: 1080;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 250px;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+.col-4 img{
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.7s;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.small-container button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 250px;
+  font-size: 18px;
+}
+
+.small-container button:hover {
+  background: #3234ad;
+}
+.title{
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #3234ad
+}
+.title::after{
+  content: '';
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h4{
+  font-size: 18px;
+  color: #d16500;
+  font-weight: normal;
+}
+.col-4 p{
+  font-size: 14px;
+  width: 250px;
+}
+.col-4:hover{
+  transform: translateY(-4px);
+}
+.col-4-btn{
+  display: inline-block;
+  background: #d16500;
+  padding: 8px 0px;
+  margin: 10px 0;
+  border-radius: 15px;
+  transition: background 0.3s;
+}
+
+.col-5{
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.col-5 p{
+  font-size: 14px;
+}
+.btn500{
+  background: #d16500;
+  align-items: center;
+  padding: 8px 0px;
+  margin: 10px 0;
+  border-radius: 15px;
+  transition: background 0.3s;
+}
+
+.container2{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+
+
+.left-column {
+  width: 65%;
+  position: relative;
+}
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+}
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+@media (max-width: 940px) {
+  .container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+}
+
+@media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -85px;
+  }
+}
